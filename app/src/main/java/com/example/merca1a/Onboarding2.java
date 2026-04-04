@@ -40,7 +40,7 @@ public class Onboarding2 extends AppCompatActivity {
     public void AbrirOnboarding3(){
         // animación del progreso de 66 a 100
         ObjectAnimator animator = ObjectAnimator.ofInt(progress, "progress", 66, 100);
-        animator.setDuration(500);
+        animator.setDuration(150);
         animator.start();
 
         // se espera que termine la animación
@@ -58,6 +58,6 @@ public class Onboarding2 extends AppCompatActivity {
 
             startActivity(intent, options.toBundle());
 
-        }, 500); // mismo tiempo que la animación
+        }, 150); // mismo tiempo que la animación
     }
 }

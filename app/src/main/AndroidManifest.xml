@@ -12,26 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Merca1A">
         <activity
-            android:name=".Onboarding3"
+            android:name=".Login"
             android:exported="false" />
-        <!-- ONBOARDING 1 (AHORA ES EL INICIO) -->
+        <!-- 🔥 SPLASH SCREEN (PRIMERA PANTALLA) -->
         <activity
-            android:name=".Onboarding1"
+            android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- ONBOARDING 2 -->
+        </activity> <!-- ONBOARDINGS -->
+        <activity
+            android:name=".Onboarding1"
+            android:exported="false" />
         <activity
             android:name=".Onboarding2"
-            android:exported="false" /> <!-- MAIN -->
+            android:exported="false" />
+        <activity
+            android:name=".Onboarding3"
+            android:exported="false" /> <!-- MAIN APP -->
         <activity
             android:name=".MainActivity"
-            android:exported="false" /> <!-- OPCIONAL -->
-        <activity
-            android:name=".MainActivity2"
             android:exported="false" />
     </application>
 
