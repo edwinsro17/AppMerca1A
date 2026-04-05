@@ -3,7 +3,7 @@ package com.example.merca1a;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,40 +11,25 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Auth extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_auth);
+        setContentView(R.layout.activity_login);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        Button btn_iniciar = findViewById(R.id.btn_login);
-        btn_iniciar.setOnClickListener(new View.OnClickListener() {
+        TextView tv_inicar = findViewById(R.id.tv_sign_up);
+        tv_inicar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                abrirIniciar();
-            }
-        });
-        Button btn_crear = findViewById(R.id.btn_sing_up);
-        btn_crear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                abrirCrear();
-            }
+            public void onClick(View view) {abrirSingUp();}
         });
     }
-
-    public void abrirIniciar(){
-        Intent i =new Intent(this, Login.class);
-        startActivity(i);
-    }
-    public void abrirCrear(){
+    public void abrirSingUp(){
         Intent i =new Intent(this, SingUp.class);
         startActivity(i);
     }

@@ -33,6 +33,7 @@
 
         <ImageView
             android:id="@+id/imageView7"
+            android:background="#FAFAFA"
             android:layout_width="match_parent"
             android:layout_height="283dp"
             app:srcCompat="@drawable/img_auth" />
@@ -56,14 +57,14 @@
                 <!-- CONTENIDO -->
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/btn_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/verde_jade_oscuro"
                     android:text="Iniciar Sesión" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/btn_sing_up"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -79,9 +80,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <androidx.constraintlayout.widget.Barrier
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

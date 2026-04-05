@@ -1,6 +1,7 @@
 package com.example.merca1a;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +10,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Welcome extends AppCompatActivity {
-
+    private TextView tv_usuario;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +21,9 @@ public class Welcome extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        tv_usuario = findViewById(R.id.tv_usuario);
+        String usuario = getIntent().getStringExtra("nombre");
+        tv_usuario.setText(usuario);
     }
 }
