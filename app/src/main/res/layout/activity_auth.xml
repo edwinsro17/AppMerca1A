@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAFAFA"
-    tools:context=".Login">
+    tools:context=".Auth">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
             android:id="@+id/imageView7"
             android:layout_width="match_parent"
             android:layout_height="283dp"
-            app:srcCompat="@drawable/img_login" />
+            app:srcCompat="@drawable/img_auth" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card"

@@ -1,18 +1,11 @@
 package com.example.merca1a;
 
-import android.animation.ObjectAnimator;
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Pair;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.progressindicator.CircularProgressIndicator;
 
@@ -39,7 +32,7 @@ public class Onboarding3 extends AppCompatActivity {
     }
 
     public void AbrirLogin(){
-        Intent intent = new Intent(Onboarding3.this, Login.class);
+        Intent intent = new Intent(Onboarding3.this, Auth.class);
         startActivity(intent);
     }
 }
